@@ -42,6 +42,8 @@ main {
 .container2 {
     display: flex;
     justify-content: space-evenly;
+    padding: 30px 0 0 0;
+    border: 3px solid black;
 }
 .container4 {
     display: flex;
@@ -193,7 +195,7 @@ main {
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 95%;
     padding: 30px;
 }
 .articulost {
@@ -398,4 +400,38 @@ span {
 .contc {
     width: 33%;
     border: 3px solid black;
+}
+.princime {
+    display: flex;
+    justify-content: center;
+    font-family: 'Edu AU VIC WA NT Dots', cursive;
+    background-color: #121212;
+    padding: 10%;
+}
+.proximamente1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid white;
+    padding: 30px;
+}
+.todito {
+    width: 100%;
+    height: 100%;
+}
+.proximamente1 img {
+    width: 50%;
+}
+.megusub {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.megusub i {
+    font-size: 30px;
+}
+.megumini {
+    width: 20%;
 }
