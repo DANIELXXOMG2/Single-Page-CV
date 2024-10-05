@@ -36,6 +36,7 @@ main {
 .container1, .container3 {
     display: block;
 }
+
 .container2, .container3 {
     background-color: whitesmoke;
 }
@@ -89,11 +90,15 @@ main {
 .portada h2, .portada a {
     font-family: Lora;
 }
+
 .menup {
     width: 30%;
     height: 20%;
     display: flex;
     justify-content: space-between;
+}
+.menup a:hover {
+    background-color: #e9ecef;
 }
 .submenu {
     display: flex;
@@ -102,6 +107,7 @@ main {
     justify-content: space-between;
     background-color: whitesmoke;
 }
+
 .textp, .oe {
     display: flex;
     align-content: center;
@@ -113,11 +119,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .imgp img {
     width: 50%;
     border-radius: 50%;
-    justify-content: center;
+    display: block;
 }
 .imgp a {
     display: flex;
@@ -129,6 +136,7 @@ main {
     justify-content: center;
     font-family: Cormorant Infant;
 }
+
 .proyectos {
     width: 80%;
     height: 60%;
@@ -152,9 +160,13 @@ main {
     padding: 0;
     border: 3px solid black;
 }
-.proyectosp ul {
+.proyectosp ul, .proyectop a:hover {
     list-style-type: none;
     padding: 0;
+}
+.proyectot a:hover {
+    font-size: 28px;
+    color: #ff8fab;
 }
 .proyectop, .trabajop, .educacionp {
     padding: 10px 0;
@@ -163,7 +175,7 @@ main {
     align-items: center;
     align-content: center;
     display: flex;
-    background-color: rgba(196, 234, 255, 0.904);
+    background-color: #e63946;
     font-family: Lora;
 }
 .proyectot {
@@ -183,6 +195,10 @@ main {
     flex-direction: column;
     height: 50%;
     font-family: Playwrite DE Grund;
+}
+.experiencia_trabajo a:hover {
+    color: rgb(50, 50, 202);
+    font-size: 20px;
 }
 .educacionp {
     border-top: 2.5px solid black;
@@ -224,16 +240,7 @@ main {
     border: 3px solid black;
     font-family: Playwrite DE Grund;
 }
-.aea {
-    height: 20%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-.sapa {
-    height: 40vh;
-    display: flex;
-}
+
 .reseñasp {
     display: flex;
     padding: 10px 0;
@@ -435,3 +442,96 @@ span {
 .megumini {
     width: 20%;
 }
+.theme-checkbox {
+    --toggle-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 4em;
+    height: 2em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 1.5em - 0.25em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+body.dark-mode .container1 {
+    background-color: #333;
+}
+body.dark-mode .container2 {
+    background-color: #333;
+}
+body.dark-mode .container3 {
+    background-color: #333;
+}
+body.dark-mode .container5 {
+    background-color: #333;
+}
+body.dark-mode .container6 {
+    background-color: #333;
+}
+body.dark-mode .submenu {
+    background-color: #333;
+}
+body.dark-mode header {
+    background-color: #32323d88;
+}
+
+body.dark-mode main {
+    background-color: #32323d88;
+}
+.derechos {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
